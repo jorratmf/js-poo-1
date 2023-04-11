@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto</title>
+  </head>
+  <body>
+    <!--Datos para crear el objeto-->
+    <h1>Auto</h1>
+    <form id="auto-form">
+      <label for="color-input">Color:</label>
+      <input type="text" id="color-input" name="color-input" /><br /><br />
+
+      <label for="marca-input">Marca:</label>
+      <input type="text" id="marca-input" name="marca-input" /><br /><br />
+
+      <label for="modelo-input">Modelo:</label>
+      <input type="text" id="modelo-input" name="modelo-input" /><br /><br />
+
+      <button type="submit">Crear Auto</button>
+    </form>
+
+    <!--Información del objeto (auto)-->
+    <div id="auto-info">
+      <h2>Información</h2>
+      <p>Color: <span id="color"></span></p>
+      <p>Marca: <span id="marca"></span></p>
+      <p>Modelo: <span id="modelo"></span></p>
+      <p>Estado: <span id="estado"></span></p>
+    </div>
+    <button onclick="encender()">Encender</button>
+    <button onclick="apagar()">Apagar</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
